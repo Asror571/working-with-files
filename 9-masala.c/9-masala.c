@@ -2,19 +2,19 @@
 #include <string.h>
 
 int main(){
-    FILE *input = fopen("input.txt","r");
-    FILE *output = fopen("output.txt","w");
+    FILE *input = fopen("input.txt","r");    // Fayllar yaratildi 
+    FILE *output = fopen("output.txt","w");    
 
-    char belgi;
-    int pilus,minus,qavs,teng,bolish,kopaytirish;
+    char belgi;            // Belgilarni 
+    int pilus,minus,qavs,teng,bolish,kopaytirish;        // hisoblash uchun
 
     if (input == NULL){
         printf("Faylni o'qib bo'lmadi ");
         return 1;
     }
 
-    while ((belgi = fgetc(input)) != EOF){
-        if (belgi == '+') {
+    while ((belgi = fgetc(input)) != EOF){ 
+        if (belgi == '+') {                         // Shart tekshiradi hamda hisoblaydi 
             pilus++;
         }
         else if (belgi == '-'){
@@ -33,7 +33,7 @@ int main(){
             kopaytirish++;
         }
     }
-    fprintf(output,"Pilus : %d\n",pilus);
+    fprintf(output,"Pilus : %d\n",pilus);     // Natija faylga yoziladi 
     fprintf(output,"Minus : %d\n",minus);
     fprintf(output,"Qavs : %d\n",qavs);
     fprintf(output,"Tenglik : %d\n",teng);

@@ -1,6 +1,0 @@
-Pilus : 1
-Minus : 16
-Qavs : 560
-Tenglik : -1491462903
-Bo'lish : 552
-Ko'paytirish  : -584440976
