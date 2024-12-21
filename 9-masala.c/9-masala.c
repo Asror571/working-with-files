@@ -6,7 +6,7 @@ int main(){
     FILE *output = fopen("output.txt","w");    
 
     char belgi;            // Belgilarni 
-    int pilus,minus,qavs,teng,bolish,kopaytirish;        // hisoblash uchun
+    int pilus = 0, minus = 0 ,qavs = 0,qavs1 = 0, teng = 0,bolish = 0,kopaytirish = 0;        // hisoblash uchun
 
     if (input == NULL){
         printf("Faylni o'qib bo'lmadi ");
@@ -20,8 +20,11 @@ int main(){
         else if (belgi == '-'){
             minus++;
         }
-        else if (belgi == '(' || ')'){
+        else if (belgi == '('){
             qavs++;
+        }
+        else if (belgi == '('){
+            qavs1++;
         }
         else if (belgi == '='){
             teng++;

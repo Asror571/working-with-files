@@ -1,0 +1,6 @@
+Pilus : 1
+Minus : 0
+Qavs : 1
+Tenglik : 0
+Bo'lish : 1
+Ko'paytirish  : 0
